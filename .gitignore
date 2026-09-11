@@ -1,0 +1,27 @@
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Swift / SwiftPM 构建产物
+.build/
+.swiftpm/
+*.xcodeproj/
+DerivedData/
+*.o
+*.swiftmodule
+*.swiftdoc
+
+# 打包产物（可用 ./build.sh 重新生成）
+JSONEditor.app/
+*.dmg
+*.icns
+
+# Xcode 个人配置
+*.xcuserstate
+xcuserdata/
+
+# 编辑器
+.idea/
+.vscode/
+*.swp

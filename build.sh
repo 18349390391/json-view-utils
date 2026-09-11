@@ -12,6 +12,9 @@ mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp .build/release/JSONEditor "$APP/Contents/MacOS/"
 cp Resources/Info.plist "$APP/Contents/Info.plist"
 
+# 中文本地化声明（使 AppKit 标准菜单/系统面板支持中文）
+cp -R Resources/zh-Hans.lproj "$APP/Contents/Resources/zh-Hans.lproj"
+
 echo "▶ 生成应用图标…"
 TMPDIR_ICON="$(mktemp -d)"
 ICON_1024="$TMPDIR_ICON/icon_1024.png"

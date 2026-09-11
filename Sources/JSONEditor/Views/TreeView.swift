@@ -145,7 +145,6 @@ struct TreeRowView: View {
                 keyPart
                 Text(node.kind == .object ? "{" : "[")
                     .foregroundStyle(palette.text)
-                    .background(matchPill(keyMatched && node.key == nil), in: RoundedRectangle(cornerRadius: 3))
             case .containerCollapsed:
                 keyPart
                 Text(node.kind == .object ? "{ … }" : "[ … ]")
